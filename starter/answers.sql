@@ -3,7 +3,8 @@ CREATE TABLE department
     DEPARTMENTID INT(5) PRIMARY KEY,
     DepartmentName VARCHAR(20) NOT NULL
 );
-CREATE TABLE student
+
+CREATE TABLE Student
 (
     StudentID INT(5) PRIMARY KEY,
     StudentName VARCHAR(20) NOT NULL,
@@ -18,4 +19,4 @@ CREATE TABLE student
         REFERENCES department(DEPARTMENTID)
 );
 
-DESC student;
+DESC Student;
